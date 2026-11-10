@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pranay Engineering Works | Waterproofing & Civil Works, Kothapet</title>
+<meta name="description" content="Terrace leakage, crack filling, painting, renovation, new construction and all civil works in Kothapet, Hyderabad. 5 year service warranty. Call +91 6300599300.">
+<style>
+:root{--navy:#0b1e3f;--teal:#0e8fae;--aqua:#62d6dc;--orange:#f08a1c;--light:#f3f8fb;--cream:#f9f4ec}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:system-ui,Segoe UI,Arial,sans-serif;color:#1c2433;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:sticky;top:0;z-index:10;background:#fff;box-shadow:0 2px 10px #0001;display:flex;align-items:center;justify-content:space-between;padding:8px 5%}
+.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--navy)}
+.brand img{height:68px;width:auto;max-width:200px;object-fit:contain;border-radius:0}
+nav a{margin-left:20px;font-weight:600;font-size:.95rem}
+.btn{display:inline-block;padding:12px 26px;border-radius:30px;font-weight:700;background:var(--orange);color:#fff;border:0;cursor:pointer;font-size:1rem}
+.btn.alt{background:#25d366}
+.btn.dark{background:var(--navy);border-radius:4px}
+
+/* Carousel */
+.carousel{position:relative;overflow:hidden;background:linear-gradient(135deg,#071733,#0e8fae);color:#fff}
+.slides{position:relative;min-height:440px}
+.slide{position:absolute;inset:0;display:grid;grid-template-columns:1.1fr .9fr;gap:30px;align-items:center;padding:50px 7%;opacity:0;visibility:hidden;transition:opacity .8s}
+.slide.active{opacity:1;visibility:visible}
+.tag{display:inline-block;font-size:.75rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--aqua);margin-bottom:10px}
+.slide h1{font-size:2.8rem;line-height:1.15;margin-bottom:14px}
+.slide h1 em{color:var(--aqua)}
+.slide p{opacity:.92;margin-bottom:24px;max-width:480px}
+.slide .btn+.btn{margin-left:10px}
+.slide svg{width:100%;max-height:340px;border-radius:18px;box-shadow:0 10px 30px #0006}
+.dots{position:absolute;bottom:14px;left:0;right:0;display:flex;justify-content:center;gap:10px}
+.dots button{width:12px;height:12px;border-radius:50%;border:0;background:#ffffff66;cursor:pointer}
+.dots button.on{background:var(--orange);width:30px;border-radius:8px}
+.bar{position:absolute;top:0;left:0;height:4px;background:var(--orange);width:0}
+
+section{padding:64px 5%}
+h2{text-align:center;color:var(--navy);font-size:2.1rem;margin-bottom:8px}
+h2 em{color:var(--teal)}
+.sub{text-align:center;color:#667;margin-bottom:34px}
+
+/* Highlights */
+.hl{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:22px}
+.hcard{background:var(--cream);border-radius:16px;padding:26px;position:relative;box-shadow:0 4px 18px #0001}
+.hcard:nth-child(2){background:#fff}
+.hcard .n{position:absolute;top:16px;right:20px;font-size:.8rem;color:#99a}
+.hcard .ic{font-size:1.8rem}
+.hcard h3{color:var(--navy);font-size:1.4rem;margin:6px 0}
+.hcard p{font-size:.93rem;color:#556;margin-bottom:10px}
+.hcard a{font-weight:700;font-size:.92rem}
+
+/* Services grid */
+.sgrid{display:grid;grid-template-columns:repeat(4,1fr);border:1px solid #e3e8ee;background:#fff}
+.sgrid div{padding:24px 22px;border:1px solid #e3e8ee;margin:-.5px;transition:.2s}
+.sgrid div:hover{background:var(--light)}
+.sgrid .i{font-size:1.5rem;color:var(--teal)}
+.sgrid h3{font-size:1rem;color:var(--navy);margin:8px 0 4px}
+.sgrid p{font-size:.85rem;color:#667}
+
+/* Warranty */
+.warranty{background:radial-gradient(circle at 20% 20%,#1b3a7a,#0b1e3f 70%);color:#fff;text-align:center}
+.wbox{max-width:980px;margin:auto}
+.badge{width:170px;height:170px;margin:0 auto 18px;border-radius:50%;background:conic-gradient(#f5b82e,#ffe08a,#f5b82e,#c98a0a,#f5b82e);display:grid;place-items:center;box-shadow:0 0 0 8px #f5b82e33,0 10px 30px #0008}
+.badge div{width:140px;height:140px;border-radius:50%;background:#0b1e3f;display:flex;flex-direction:column;align-items:center;justify-content:center}
+.badge b{font-size:4rem;line-height:1;color:#f5b82e}
+.badge span{font-size:.8rem;font-weight:800;letter-spacing:.2em;color:#ffe08a}
+.warranty .tag{color:#f5b82e}
+.wbox h2{color:#fff;font-size:2.2rem;margin:6px 0 10px}
+.wbox>p{color:#c9d6f0;max-width:620px;margin:0 auto 28px}
+.wpts{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin-bottom:30px;text-align:left}
+.wpts div{background:#ffffff12;border:1px solid #f5b82e55;border-radius:12px;padding:16px 18px;font-size:.93rem}
+.wpts b{color:#f5b82e;display:block;margin-bottom:2px}
+.btn.gold{background:#f5b82e;color:#0b1e3f}
+
+.why{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;text-align:center}
+.why div{background:#fff;padding:24px;border-radius:14px;box-shadow:0 3px 12px #0001}
+.why b{font-size:2rem;color:var(--orange);display:block}
+.alt-bg{background:var(--light)}
+.brands{display:flex;flex-wrap:wrap;justify-content:center;gap:14px}
+.brands span{background:#fff;border:2px solid var(--teal);color:var(--navy);padding:10px 22px;border-radius:30px;font-weight:700}
+#contact{background:linear-gradient(135deg,#071733,#0e6f8f)}
+#contact .tag{color:var(--aqua)!important}
+#contact h2{color:#fff}
+#contact h2 em{color:var(--aqua)}
+#contact .lead{color:#d3e6ee}
+#contact .cl small{color:var(--aqua)}
+#contact .cl b,#contact .cl a{color:#fff}
+.contact{display:grid;grid-template-columns:1fr 1fr 1fr;gap:36px;align-items:stretch;max-width:1250px;margin:auto}
+.mapcol{display:flex;flex-direction:column;background:#e4edee;padding:30px}
+.mapcol small{color:var(--navy)!important}
+.contact h2{text-align:left;font-size:2.4rem;line-height:1.15}
+.contact .lead{color:#556;margin:10px 0 22px;max-width:440px}
+.cl{margin-bottom:16px}
+.cl small{display:block;font-size:.7rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--teal)}
+.cl b{color:var(--navy);font-size:1.05rem}
+.form{background:#e4edee;padding:30px}
+.form label{display:block;font-size:.78rem;font-weight:700;color:var(--navy);margin-bottom:18px}
+.form input,.form select{width:100%;border:0;border-bottom:1px solid #8aa;background:transparent;padding:10px 2px;font-size:1rem;font-family:inherit;outline:none;margin-top:4px}
+.form input:focus,.form select:focus{border-color:var(--teal)}
+.form button{width:100%;margin-top:6px;padding:15px;background:var(--navy);color:#fff;border:0;font-weight:700;font-size:1rem;cursor:pointer}
+.form button:hover{background:#13306a}
+.form .note{text-align:center;font-size:.75rem;color:#667;margin-top:12px}
+.mapcol small{display:block;font-size:.7rem;letter-spacing:.14em;font-weight:800;text-transform:uppercase;color:var(--aqua);margin-bottom:10px}
+iframe{width:100%;flex:1;min-height:300px;border:0;border-radius:0}
+@media(max-width:900px){.contact{grid-template-columns:1fr}}
+footer{background:var(--navy);color:#cfd8ee;text-align:center;padding:20px;font-size:.9rem}
+.wa{position:fixed;right:20px;bottom:20px;z-index:20;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 4px 14px #0004;animation:pulse 2s infinite}
+.wa svg{width:34px;height:34px;fill:#fff}
+@keyframes pulse{50%{box-shadow:0 0 0 14px #25d36633}}
+@media(max-width:900px){
+  .slides{min-height:600px}.slide{grid-template-columns:1fr;padding:30px 6% 50px;align-content:start}.slide h1{font-size:2rem}.slide svg{max-height:200px}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .contact{grid-template-columns:1fr}nav{display:none}
+}
+/* ===== Responsive: adapts to device width ===== */
+html{-webkit-text-size-adjust:100%}
+img,svg,iframe{max-width:100%}
+.slides{display:grid;min-height:0}
+.slide{grid-area:1/1;position:relative;inset:auto}
+.slide h1{font-size:clamp(1.8rem,4.5vw,2.8rem)}
+h2{font-size:clamp(1.6rem,3.5vw,2.1rem)}
+.contact h2{font-size:clamp(1.7rem,3.8vw,2.4rem)}
+.wbox h2{font-size:clamp(1.5rem,3.5vw,2.2rem)}
+.hl,.sgrid{width:100%}
+@media(max-width:1024px){
+  .sgrid{grid-template-columns:repeat(3,1fr)}
+  .contact{grid-template-columns:1fr 1fr}
+  .contact>div:first-child{grid-column:1/-1}
+}
+@media(max-width:900px){
+  header{flex-wrap:wrap;gap:6px 12px;padding:8px 4%}
+  nav{display:flex;order:3;width:100%;justify-content:space-between;overflow-x:auto;gap:14px;padding-top:4px;border-top:1px solid #e3e8ee}
+  nav a{margin:0;white-space:nowrap;padding:6px 0}
+  .brand{font-size:1rem;flex:1;min-width:0}
+  .brand img{height:52px}
+  .slide{padding:30px 5% 54px}
+  .slide p{max-width:none}
+  .slide svg{order:-1;max-height:210px}
+  section{padding:44px 5%}
+  .sgrid{grid-template-columns:repeat(2,1fr)}
+  .contact{grid-template-columns:1fr;gap:24px}
+  .mapcol iframe{min-height:260px}
+}
+@media(max-width:520px){
+  .brand span,.brand{font-size:.92rem}
+  header .btn{padding:9px 16px;font-size:.9rem}
+  .slide .btn{display:block;text-align:center;margin:0 0 10px!important}
+  .sgrid{grid-template-columns:1fr}
+  .badge{width:140px;height:140px}.badge div{width:114px;height:114px}.badge b{font-size:3.2rem}
+  .form,.mapcol{padding:20px}
+  .wa{width:54px;height:54px;right:14px;bottom:14px}
+}
+</style>
+</head>
+<body>
+
+<header>
+  <a class="brand" href="#"><img src="logo.png" alt="Pranay Engineering Works logo"> Pranay Engineering Works</a>
+  <nav><a href="#solutions">Solutions</a><a href="#services">Services</a><a href="#warranty">Warranty</a><a href="#contact">Contact</a></nav>
+  <a class="btn" href="tel:+916300599300">Call Now</a>
+</header>
+
+<!-- Auto-scrolling highlights (5s) -->
+<div class="carousel" id="carousel">
+  <div class="bar" id="bar"></div>
+  <div class="slides">
+
+    <div class="slide active">
+      <div>
+        <span class="tag">01 · Terrace Membrane Coating</span>
+        <h1>100% Water <em>Resistant</em> terraces.</h1>
+        <p>High-performance membrane protection for exposed terrace slabs and recurring roof leaks.</p>
+        <a class="btn alt" href="https://wa.me/916300599300?text=Hi%2C%20I%20need%20terrace%20membrane%20coating" target="_blank" rel="noopener">Discuss on WhatsApp →</a>
+      </div>
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Terrace coating illustration">
+        <rect width="400" height="300" fill="#bfe3f5"/>
+        <g fill="#9db4c8"><rect x="20" y="120" width="40" height="80"/><rect x="70" y="90" width="50" height="110"/><rect x="130" y="130" width="40" height="70"/><rect x="250" y="100" width="45" height="100"/><rect x="305" y="125" width="60" height="75"/></g>
+        <polygon points="0,200 400,200 400,300 0,300" fill="#f4f8fb"/><polygon points="0,200 400,200 380,220 20,220" fill="#fff"/>
+        <ellipse cx="300" cy="262" rx="40" ry="8" fill="#0002"/><rect x="280" y="238" width="40" height="26" rx="3" fill="#fff" stroke="#9aa" /><rect x="280" y="238" width="40" height="7" fill="#0e8fae"/>
+        <circle cx="150" cy="130" r="14" fill="#e0b48c"/><rect x="135" y="144" width="30" height="62" rx="8" fill="#1d3a6b"/><rect x="138" y="204" width="10" height="46" fill="#1d3a6b"/><rect x="152" y="204" width="10" height="46" fill="#1d3a6b"/>
+        <path d="M165 160L230 245" stroke="#f08a1c" stroke-width="5"/><rect x="220" y="240" width="30" height="8" rx="3" fill="#0e8fae"/>
+      </svg>
+    </div>
+
+    <div class="slide">
+      <div>
+        <span class="tag">02 · Injection Grouting & Chemical Sealing</span>
+        <h1>Seal leaks <em>from within.</em></h1>
+        <p>Deep-penetration PU and epoxy grouting for active honeycombs, expansion joints and concrete fissures.</p>
+        <a class="btn alt" href="https://wa.me/916300599300?text=Hi%2C%20I%20need%20injection%20grouting" target="_blank" rel="noopener">Message Us →</a>
+      </div>
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Injection grouting illustration">
+        <rect width="400" height="300" fill="#8e969f"/>
+        <g fill="#7b838c"><rect x="0" y="60" width="400" height="4"/><rect x="0" y="180" width="400" height="4"/></g>
+        <path d="M300 0l-18 60 22 50-24 60 14 130" stroke="#2b2f33" stroke-width="6" fill="none"/>
+        <circle cx="290" cy="150" r="9" fill="#f08a1c"/>
+        <rect x="120" y="140" width="150" height="22" rx="6" fill="#444c55"/><rect x="170" y="125" width="60" height="14" fill="#222"/>
+        <circle cx="200" cy="105" r="26" fill="#fff" stroke="#333" stroke-width="4"/><path d="M200 105l14-12" stroke="#c0392b" stroke-width="3"/>
+        <rect x="80" y="146" width="44" height="12" fill="#f08a1c"/>
+        <g fill="#62d6dc"><circle cx="312" cy="168" r="4"/><circle cx="318" cy="182" r="3"/></g>
+      </svg>
+    </div>
+
+    <div class="slide">
+      <div>
+        <span class="tag">03 · Cool Roof Insulation & Sump Sealing</span>
+        <h1>Cooler rooms. <em>Drier roofs.</em></h1>
+        <p>Solar-reflective rooftop coatings reduce indoor heat while providing complete moisture protection.</p>
+        <a class="btn" href="tel:+916300599300">Get a Quote →</a>
+      </div>
+      <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Cool roof illustration">
+        <rect width="400" height="300" fill="#cfeaf7"/>
+        <circle cx="330" cy="60" r="34" fill="#ffc83d"/><g stroke="#ffc83d" stroke-width="5"><path d="M330 8v-8M330 112v8M278 60h-8M382 60h8M293 23l-6-6M367 97l6 6M367 23l6-6M293 97l-6 6"/></g>
+        <path d="M300 95L250 160M320 100L290 160" stroke="#fff" stroke-width="4" stroke-dasharray="6 6"/>
+        <polygon points="40,170 360,170 400,300 0,300" fill="#fff"/>
+        <polygon points="40,170 360,170 372,190 28,190" fill="#e9f3f8"/>
+        <rect x="90" y="215" width="70" height="60" fill="#0e8fae" opacity=".25"/><rect x="240" y="215" width="70" height="60" fill="#0e8fae" opacity=".25"/>
+        <text x="200" y="150" text-anchor="middle" font-size="22" font-weight="700" fill="#0e8fae">−5°C indoors*</text>
+      </svg>
+    </div>
+
+  </div>
+  <div class="dots" id="dots"><button class="on" aria-label="Slide 1"></button><button aria-label="Slide 2"></button><button aria-label="Slide 3"></button></div>
+</div>
+
+<!-- Highlight cards -->
+<section id="solutions">
+  <h2>Our Featured <em>Solutions</em></h2>
+  <p class="sub">Three core waterproofing systems, applied with certified high-grade chemicals</p>
+  <div class="hl">
+    <div class="hcard"><span class="n">01</span><div class="ic">🧱</div><span class="tag" style="color:var(--teal)">Terrace Membrane Coating</span><h3>100% Water Resistant</h3><p>High-performance membrane protection for exposed terrace slabs and recurring roof leaks.</p><a href="https://wa.me/916300599300?text=Hi%2C%20I%20need%20terrace%20membrane%20coating" target="_blank" rel="noopener">Discuss on WhatsApp →</a></div>
+    <div class="hcard"><span class="n">02</span><div class="ic">💉</div><span class="tag" style="color:var(--teal)">Injection Grouting & Chemical Sealing</span><h3>Seal leaks from within.</h3><p>Deep-penetration PU and epoxy grouting for honeycombs, expansion joints and concrete fissures.</p><a href="https://wa.me/916300599300?text=Hi%2C%20I%20need%20injection%20grouting" target="_blank" rel="noopener">Message Us →</a></div>
+    <div class="hcard"><span class="n">03</span><div class="ic">☀️</div><span class="tag" style="color:var(--teal)">Cool Roof Insulation & Sump Sealing</span><h3>Cooler rooms. Drier roofs.</h3><p>Solar-reflective rooftop coatings reduce indoor heat while providing complete moisture protection.</p><a href="tel:+916300599300">Get a quote →</a></div>
+  </div>
+</section>
+
+<section id="services" class="alt-bg">
+  <h2>Every leak has a <em>lasting solution.</em></h2>
+  <p class="sub">Permanent leak-proofing and civil solutions across residential, commercial and industrial structures</p>
+  <div class="sgrid">
+    <div><span class="i">🏢</span><h3>Building Leakage</h3><p>Complete protection for new & existing buildings.</p></div>
+    <div><span class="i">🏠</span><h3>Terrace Leakage</h3><p>Roof slab elastomeric polymer coatings.</p></div>
+    <div><span class="i">🛢️</span><h3>Water Tanks</h3><p>Food-grade non-toxic chemical sealing.</p></div>
+    <div><span class="i">💧</span><h3>Sump Leakage</h3><p>Underground water sump leak-proofing.</p></div>
+    <div><span class="i">🛁</span><h3>Bathroom Leakage</h3><p>Sunken slab & tile joint treatment.</p></div>
+    <div><span class="i">▦</span><h3>Tiles Grouting</h3><p>Waterproof epoxy joint filling.</p></div>
+    <div><span class="i">⚡</span><h3>Crack Filling</h3><p>Structural wall & slab fissure repair.</p></div>
+    <div><span class="i">🏊</span><h3>Swimming Pools</h3><p>High hydrostatic pressure coatings.</p></div>
+    <div><span class="i">🏚️</span><h3>Basement Seepage</h3><p>Underground water ingress prevention.</p></div>
+    <div><span class="i">🏛️</span><h3>Balcony Leakage</h3><p>Floor membrane & perimeter barrier.</p></div>
+    <div><span class="i">🚽</span><h3>W/C Toilets</h3><p>Plumbing & wall seepage elimination.</p></div>
+    <div><span class="i">☀️</span><h3>Cool Roof Paint</h3><p>Solar reflective heat reduction.</p></div>
+    <div><span class="i">🎨</span><h3>Painting</h3><p>Interior, exterior & waterproof paint finish.</p></div>
+    <div><span class="i">🔨</span><h3>Renovation</h3><p>Fresh, durable new look for home or office.</p></div>
+    <div><span class="i">🏗️</span><h3>New Construction</h3><p>Quality builds from foundation to finish.</p></div>
+    <div><span class="i">🧰</span><h3>All Civil Works</h3><p>Plastering, flooring, tiling, masonry & more.</p></div>
+  </div>
+</section>
+
+<!-- Warranty -->
+<section id="warranty" class="warranty">
+  <div class="wbox">
+    <div class="badge"><div><b>5</b><span>YEAR WARRANTY</span></div></div>
+    <span class="tag">Confidence built in</span>
+    <h2>5 year service warranty with a yearly check-in.</h2>
+    <p>All our waterproofing services are backed by a 5 year service warranty.</p>
+    <div class="wpts">
+      <div><b>🛡️ 5 Year Cover</b>On all waterproofing services</div>
+      <div><b>🔍 Yearly Inspection</b>Complimentary check every year</div>
+      <div><b>🧪 Certified Chemicals</b>High-grade materials only</div>
+    </div>
+    <a class="btn gold" href="https://wa.me/916300599300?text=Hi%2C%20I%20want%20to%20know%20about%20the%205%20year%20warranty" target="_blank" rel="noopener">Ask about the warranty →</a>
+  </div>
+</section>
+
+<section id="why">
+  <h2>Why Choose Us</h2>
+  <p class="sub">Trusted by homeowners and builders in Kothapet</p>
+  <div class="why">
+    <div><b>✔</b>Authorised applicator for Fosroc & Dr. Fixit</div>
+    <div><b>✔</b>Skilled, experienced workmen</div>
+    <div><b>✔</b>Honest pricing and free site inspection</div>
+    <div><b>✔</b>5 year service warranty</div>
+  </div>
+</section>
+
+<section class="alt-bg">
+  <h2>Quality Materials</h2>
+  <p class="sub">We use only trusted brands</p>
+  <div class="brands"><span>Fosroc</span><span>Dr. Fixit</span><span>UltraTech</span><span>Asian Paints</span></div>
+</section>
+
+<section id="contact">
+  <div class="contact">
+    <div>
+      <span class="tag" style="color:var(--teal)">Get in touch</span>
+      <h2>Book your free <em>site inspection.</em></h2>
+      <p class="lead">Contact Pranay Engineering Works today for professional waterproofing and civil services, and a comprehensive on-site visit.</p>
+      <div class="cl"><small>WhatsApp / Call</small><b><a href="tel:+916300599300">+91 63005 99300</a></b></div>
+      <div class="cl"><small>Our Location</small><b>1-5-225, Vinayaka Nagar, Kothapet,<br>Hyderabad – 500035</b></div>
+      <div class="cl"><small>Services</small><b>Waterproofing, Crack Filling, Painting, Renovation, New Construction & All Civil Works</b></div>
+    </div>
+    <form class="form" id="enq">
+      <label>Your Name<input name="n" placeholder="Your name" required></label>
+      <label>Phone Number<input name="p" type="tel" placeholder="Your phone number" required></label>
+      <label>Area / Location<input name="a" placeholder="Your area"></label>
+      <label>Service Requirement
+        <select name="s">
+          <option>Terrace Leakage</option><option>Building Leakage</option><option>Water Tanks</option><option>Sump Leakage</option>
+          <option>Bathroom Leakage</option><option>Tiles Grouting</option><option>Crack Filling</option><option>Swimming Pools</option>
+          <option>Basement Seepage</option><option>Balcony Leakage</option><option>W/C Toilets</option><option>Cool Roof Paint</option>
+          <option>Painting</option><option>Renovation</option><option>New Construction</option><option>Other Civil Works</option>
+        </select>
+      </label>
+      <button type="submit">Send via WhatsApp →</button>
+      <p class="note">Your enquiry opens directly in WhatsApp — no data is stored on this website.</p>
+    </form>
+    <div class="mapcol">
+      <small>Find Us</small>
+      <iframe loading="lazy" src="https://www.google.com/maps?q=Vinayaka+Nagar+Kothapet+Hyderabad+500035&output=embed" title="Map"></iframe>
+    </div>
+  </div>
+</section>
+
+<footer>© 2026 Pranay Engineering Works. All rights reserved.</footer>
+
+<a class="wa" href="https://wa.me/916300599300?text=Hi%20Pranay%20Engineering%20Works%2C%20I%20need%20a%20quote" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11 19.8L3 29l6.4-2A13 13 0 1 0 16 3zm0 23.7a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.800 1.200 1.200-3.700-.3-.4A10.700 10.700 0 1 1 16 26.700zm5.900-8c-.3-.2-1.900-1-2.200-1s-.5-.2-.7.200-.8 1-1 1.200-.4.200-.7 0a8.700 8.700 0 0 1-4.300-3.800c-.3-.6.300-.5.900-1.700.1-.2 0-.4 0-.5l-1-2.300c-.3-.6-.5-.5-.7-.5h-.6a1.200 1.200 0 0 0-.9.400 3.700 3.700 0 0 0-1.100 2.700 6.400 6.400 0 0 0 1.300 3.400 14.600 14.600 0 0 0 5.600 4.900c2.100.9 2.900.9 3.400.8a3 3 0 0 0 2-1.400 2.500 2.500 0 0 0 .2-1.400c-.1-.1-.3-.2-.6-.4z"/></svg>
+</a>
+
+<script>
+document.getElementById('enq').addEventListener('submit',function(e){
+  e.preventDefault();
+  var f=e.target,m='Hi Pranay Engineering Works,\nName: '+f.n.value+'\nPhone: '+f.p.value+'\nArea: '+f.a.value+'\nService: '+f.s.value;
+  window.open('https://wa.me/916300599300?text='+encodeURIComponent(m),'_blank');
+});
+(function(){
+  var slides=document.querySelectorAll('.slide'),dots=document.querySelectorAll('#dots button'),
+      bar=document.getElementById('bar'),box=document.getElementById('carousel'),
+      i=0,DELAY=5000,t,paused=false;
+  function show(n){
+    slides[i].classList.remove('active');dots[i].classList.remove('on');
+    i=(n+slides.length)%slides.length;
+    slides[i].classList.add('active');dots[i].classList.add('on');
+    restart();
+  }
+  function restart(){
+    clearTimeout(t);
+    bar.style.transition='none';bar.style.width='0';
+    if(paused)return;
+    void bar.offsetWidth;
+    bar.style.transition='width '+DELAY+'ms linear';bar.style.width='100%';
+    t=setTimeout(function(){show(i+1)},DELAY);
+  }
+  dots.forEach(function(d,n){d.addEventListener('click',function(){show(n)})});
+  box.addEventListener('mouseenter',function(){paused=true;restart()});
+  box.addEventListener('mouseleave',function(){paused=false;restart()});
+  restart();
+})();
+</script>
+</body>
+</html>
